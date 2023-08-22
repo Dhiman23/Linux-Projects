@@ -18,6 +18,7 @@ then
         echo "directory dose not exist: $BASE"
         exit 1
 fi
+#Create "archive folder if not present"
 
 if [[ ! -d $BASE/archive ]]
 then
@@ -25,6 +26,7 @@ then
 
 
 fi
+#Find the list of files largest than 1MB
 
 for i in `find $BASE -maxdepth $DEPTH -type f -size +1MB`
 do
