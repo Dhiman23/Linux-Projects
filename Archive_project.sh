@@ -28,7 +28,7 @@ then
 fi
 #Find the list of files largest than 1MB
 
-for i in `find $BASE -maxdepth $DEPTH -type f -size +1MB`
+for i in `find $BASE -maxdepth $DEPTH -type f -size +1M`
 do
         if  [[ $RUN -eq 0 ]]
         then
